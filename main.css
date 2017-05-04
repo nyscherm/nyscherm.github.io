@@ -1,0 +1,93 @@
+body {
+    margin: 60px 0;
+    font-family: 'Sans-Serif';
+}
+nav {
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 22px;
+    border-bottom: 3px solid #d5d5d5;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    background-color: #fff; 
+    padding: 10px 0;
+    opacity: .85;
+}
+nav ul, footer ul {
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+h1 {
+    font-size: 3em;
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+}
+h3 {
+    font-weight: normal;
+    font-size: 22px;
+    text-align: justify;
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.title {
+    text-align: center;
+    padding-top: 45px;
+}
+.blurb {
+    background: #fff url("laptop-banner.jpeg") no-repeat center top;
+    background-size: 100% auto;
+    height: 650px;
+}
+.blurb p { 
+    font-size: 36px;
+    color: #fff;
+    padding: 75px 80px 0;
+    text-align: center;
+}
+.gallery {
+
+}
+.gallery .item{
+    width: 250px;
+    height: 250px;
+    background-color: #ccc;
+    border-radius: 8px; 
+}
+
+@media (max-width: 767px) {
+    .blurb {
+        height: 350px;
+        background-position: center center; 
+    }
+}
+@media (max-width: 690px) {
+    .blurb {
+        background-image: none;
+        height: auto;
+    }
+    .blurb p {
+        padding: 0;
+    }
+}
